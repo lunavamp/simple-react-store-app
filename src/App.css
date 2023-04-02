@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-decor {
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h2, .text-decor {
+  font-size: 32px;
+  line-height: 48px;
+  color: #000000;
+}
+
+#item-container {
+  height: 320px; 
+  display: flex; 
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#card-description {
+  height: 140px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#product-component {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  #item-container {
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+  #card-description {
+    height: auto;
+    font-size: 12px;
   }
+  #product-component {
+    margin-top: 50px;
+  }  
 }
